@@ -1,0 +1,35 @@
+{
+  "name": "fe-automation",
+  "description": "How Node Js can speed up our development",
+  "main": "src/index.html",
+  "authors": [
+    "Matteo Scandolo"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "frontend",
+    "automation",
+    "nodejs"
+  ],
+  "homepage": "https://github.com/teone/fe-automation",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6"
+  },
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "dist/css/bootstrap.css",
+        "dist/js/bootstrap.js"
+      ]
+    }
+  }
+}

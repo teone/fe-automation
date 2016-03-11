@@ -7,6 +7,7 @@
     "test": "karma start",
     "server": "browser-sync start --config bs-config.js",
     "styles": "node-sass -w -r --include-path --source-map-embed -o ./src/style ./src/scss/main.scss",
+    "wiredep": "wiredep -s src/index.html",
     "start": "concurrently \"npm run styles\" \"npm run server\""
   },
   "repository": {
@@ -27,6 +28,7 @@
   "devDependencies": {
     "browser-sync": "^2.11.1",
     "concurrently": "^2.0.0",
-    "node-sass": "^3.4.2"
+    "node-sass": "^3.4.2",
+    "wiredep": "^3.0.0"
   }
 }

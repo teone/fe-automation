@@ -25,7 +25,10 @@ module.exports = {
     './src/**/*.gif'
   ],
   'server': {
-    baseDir: './src'
+    baseDir: './src',
+    routes: {
+      "/bower_components": "bower_components"
+    }
   },
   'port': 3000,
   'open': 'local'
