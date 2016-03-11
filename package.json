@@ -1,0 +1,32 @@
+{
+  "name": "fe-automation",
+  "version": "1.0.0",
+  "description": "How Node Js can speed up our development",
+  "main": "src/index.html",
+  "scripts": {
+    "test": "karma start",
+    "server": "browser-sync start --config bs-config.js",
+    "styles": "node-sass -w -r --include-path --source-map-embed -o ./src/style ./src/scss/main.scss",
+    "start": "concurrently \"npm run styles\" \"npm run server\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/teone/fe-automation"
+  },
+  "keywords": [
+    "frontend",
+    "automation",
+    "nodejs"
+  ],
+  "author": "Matteo Scandolo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/teone/fe-automation/issues"
+  },
+  "homepage": "https://github.com/teone/fe-automation",
+  "devDependencies": {
+    "browser-sync": "^2.11.1",
+    "concurrently": "^2.0.0",
+    "node-sass": "^3.4.2"
+  }
+}
